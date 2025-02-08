@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>News Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-black text-white">
+      <div class="container mx-auto flex justify-between items-center py-3">
+        <div class="text-sm">Monday, January 1, 2045</div>
+        <div class="flex space-x-4">
+          <a class="hover:text-yellow-500" href="#"> Advertise </a>
+          <a class="hover:text-yellow-500" href="#"> Contact </a>
+          <a class="hover:text-yellow-500" href="#"> Login </a>
+        </div>
+      </div>
+      <div class="container mx-auto flex justify-between items-center py-3">
+        <div class="flex space-x-4">
+          <a class="text-yellow-500" href="#"> HOME </a>
+          <a class="hover:text-yellow-500" href="#"> THỜI SỰ </a>
+          <a class="hover:text-yellow-500" href="#"> THẾ GIỚI </a>
+          <a class="hover:text-yellow-500" href="#"> KHOA HỌC </a>
+          <a class="hover:text-yellow-500" href="#"> GIẢI TRÍ </a>
+          <a class="hover:text-yellow-500" href="#"> THỂ THAO </a>
+          <a class="hover:text-yellow-500" href="#"> QUÂN SỰ </a>
+        </div>
+        <div class="relative">
+          <input
+            class="px-4 py-2 rounded-full"
+            placeholder="Keyword"
+            type="text"
+          />
+          <button class="absolute right-0 top-0 mt-2 mr-2 text-yellow-500">
+            <i class="fas fa-search"> </i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Slider -->
+    <section class="container mx-auto my-6">
+      <div class="flex">
+        <div class="w-2/3 relative">
+          <img
+            alt="Main news image"
+            class="w-full h-full object-cover"
+            height="400"
+            src="https://storage.googleapis.com/a1aa/image/tvOE5Uv1i5doLStfJWAStAjjK6kbVJS87dc5l8tU_UQ.jpg"
+            width="800"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4"
+          >
+            <div class="text-yellow-500">THỜI SỰ</div>
+            <div class="text-sm">Oct 18, 2024</div>
+            <h2 class="text-2xl font-bold">
+              NGƯỜI CẦN THƠ 'VẬT LỘN' KHI TRIỀU CƯỜNG GÂY NGẬP GẦN MỘT MÉT
+            </h2>
+          </div>
+        </div>
+        <div class="w-1/3 grid grid-rows-3 gap-4 ml-4">
+          <div class="relative">
+            <img
+              alt="News image"
+              class="w-full h-full object-cover"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/nv1gtVFGuyr7P7ZTKBJhgqNvFAU3iN3CO4Hq61PE4wY.jpg"
+              width="400"
+            />
+            <div
+              class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2"
+            >
+              <div class="text-yellow-500">QUÂN SỰ</div>
+              <div class="text-sm">Oct 18, 2024</div>
+              <h3 class="text-lg font-bold">
+                MÁY BAY TÁC CHIẾN ĐIỆN TỬ MỸ ...
+              </h3>
+            </div>
+          </div>
+          <div class="relative">
+            <img
+              alt="News image"
+              class="w-full h-full object-cover"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/nv1gtVFGuyr7P7ZTKBJhgqNvFAU3iN3CO4Hq61PE4wY.jpg"
+              width="400"
+            />
+            <div
+              class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2"
+            >
+              <div class="text-yellow-500">QUÂN SỰ</div>
+              <div class="text-sm">Oct 18, 2024</div>
+              <h3 class="text-lg font-bold">
+                HEZBOLLAH LẦN ĐẦU TẬP KÍCH ISRAE...
+              </h3>
+            </div>
+          </div>
+          <div class="relative">
+            <img
+              alt="News image"
+              class="w-full h-full object-cover"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/nv1gtVFGuyr7P7ZTKBJhgqNvFAU3iN3CO4Hq61PE4wY.jpg"
+              width="400"
+            />
+            <div
+              class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2"
+            >
+              <div class="text-yellow-500">QUÂN SỰ</div>
+              <div class="text-sm">Oct 18, 2024</div>
+              <h3 class="text-lg font-bold">
+                ISRAEL CÔNG BỐ VIDEO 'KHOẢNH KHẮC...
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured News -->
+    <section class="container mx-auto my-6">
+      <h2 class="text-2xl font-bold mb-4">FEATURED NEWS</h2>
+      <div class="grid grid-cols-4 gap-4">
+        <div class="relative">
+          <img
+            alt="Featured news image"
+            class="w-full h-full object-cover"
+            height="200"
+            src="https://storage.googleapis.com/a1aa/image/iiy_nCvmRGe_pCDziFCMGRvfxFx1eKkjoLWnv3dwXPc.jpg"
+            width="400"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2"
+          >
+            <div class="text-yellow-500">THỜI SỰ</div>
+            <div class="text-sm">Oct 18, 2024</div>
+            <h3 class="text-lg font-bold">NGƯỜI CẦN THƠ 'VẬT LỘN' KHI TR...</h3>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            alt="Featured news image"
+            class="w-full h-full object-cover"
+            height="200"
+            src="https://storage.googleapis.com/a1aa/image/iiy_nCvmRGe_pCDziFCMGRvfxFx1eKkjoLWnv3dwXPc.jpg"
+            width="400"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2"
+          >
+            <div class="text-yellow-500">QUÂN SỰ</div>
+            <div class="text-sm">Oct 18, 2024</div>
+            <h3 class="text-lg font-bold">MÁY BAY TÁC CHIẾN ĐIỆN TỬ MỸ ...</h3>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            alt="Featured news image"
+            class="w-full h-full object-cover"
+            height="200"
+            src="https://storage.googleapis.com/a1aa/image/iiy_nCvmRGe_pCDziFCMGRvfxFx1eKkjoLWnv3dwXPc.jpg"
+            width="400"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2"
+          >
+            <div class="text-yellow-500">QUÂN SỰ</div>
+            <div class="text-sm">Oct 18, 2024</div>
+            <h3 class="text-lg font-bold">
+              HEZBOLLAH LẦN ĐẦU TẬP KÍCH ISRAE...
+            </h3>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            alt="Featured news image"
+            class="w-full h-full object-cover"
+            height="200"
+            src="https://storage.googleapis.com/a1aa/image/iiy_nCvmRGe_pCDziFCMGRvfxFx1eKkjoLWnv3dwXPc.jpg"
+            width="400"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2"
+          >
+            <div class="text-yellow-500">THẾ GIỚI</div>
+            <div class="text-sm">Oct 18, 2024</div>
+            <h3 class="text-lg font-bold">
+              BÀ HARRIS MẤT DẦN ƯU THẾ THĂM D...
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Latest News -->
+    <section class="container mx-auto my-6">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-2xl font-bold">LATEST NEWS</h2>
+        <a class="text-yellow-500" href="#"> View All </a>
+      </div>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow">
+          <img
+            alt="Latest news image"
+            class="w-full h-48 object-cover rounded-lg mb-4"
+            height="200"
+            src="https://storage.googleapis.com/a1aa/image/XJsMlZYbIDTr-q5S3Utf7zTHMjToh0KoCYSWNuKan9g.jpg"
+            width="400"
+          />
+          <div class="text-yellow-500">THẾ GIỚI</div>
+          <div class="text-sm">Oct 18, 2024</div>
+          <h3 class="text-lg font-bold mb-2">
+            BÀ HARRIS MẤT DẦN ƯU THẾ THĂM D...
+          </h3>
+          <p class="text-gray-700 mb-4">
+            Bà Harris được cho là gặp bất lợi trước thêm bầu cử, khi số khảo sát
+            cho thấy lợi thế dẫn trước ông Trump trong các cuộc thăm dò đã rút
+            ngắn...
+          </p>
+          <div class="flex items-center space-x-2">
+            <img
+              alt="Author image"
+              class="w-10 h-10 rounded-full"
+              height="40"
+              src="https://storage.googleapis.com/a1aa/image/JOCg5Ds6aJX87PlDrUu911f1QzKHM2Q85wHrPz3CFC8.jpg"
+              width="40"
+            />
+            <div class="text-sm">Như Tâm</div>
+          </div>
+          <div
+            class="flex justify-between items-center mt-4 text-gray-500 text-sm"
+          >
+            <div>
+              <i class="fas fa-eye"> </i>
+              12345
+            </div>
+            <div>
+              <i class="fas fa-comments"> </i>
+              123
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <img
+            alt="Latest news image"
+            class="w-full h-48 object-cover rounded-lg mb-4"
+            height="200"
+            src="https://storage.googleapis.com/a1aa/image/XJsMlZYbIDTr-q5S3Utf7zTHMjToh0KoCYSWNuKan9g.jpg"
+            width="400"
+          />
+          <div class="text-yellow-500">QUÂN SỰ</div>
+          <div class="text-sm">Oct 18, 2024</div>
+          <h3 class="text-lg font-bold mb-2">
+            CUỘC CHẠM TRÁN BẤT NGỜ KHIẾN ...
+          </h3>
+          <p class="text-gray-700 mb-4">
+            Khi binh lính Sư đoàn 828 Israel chạm trán nhóm Hamas đang ở thành
+            phố Rafah, họ không ngờ đối phương là thủ lĩnh Hamas Yahya Sinwar
+            cùng các vệ...
+          </p>
+          <div class="flex items-center space-x-2">
+            <img
+              alt="Author image"
+              class="w-10 h-10 rounded-full"
+              height="40"
+              src="https://storage.googleapis.com/a1aa/image/JOCg5Ds6aJX87PlDrUu911f1QzKHM2Q85wHrPz3CFC8.jpg"
+              width="40"
+            />
+            <div class="text-sm">An Bình</div>
+          </div>
+          <div
+            class="flex justify-between items-center mt-4 text-gray-500 text-sm"
+          >
+            <div>
+              <i class="fas fa-eye"> </i>
+              12345
+            </div>
+            <div>
+              <i class="fas fa-comments"> </i>
+              123
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <img
+            alt="Latest news image"
+            class="w-full h-48 object-cover rounded-lg mb-4"
+            height="200"
+            src="https://storage.googleapis.com/a1aa/image/XJsMlZYbIDTr-q5S3Utf7zTHMjToh0KoCYSWNuKan9g.jpg"
+            width="400"
+          />
+          <div class="text-yellow-500">THỜI SỰ</div>
+          <div class="text-sm">Oct 18, 2024</div>
+          <h3 class="text-lg font-bold mb-2">
+            NGƯỜI CẦN THƠ 'VẬT LỘN' KHI TR...
+          </h3>
+          <p class="text-gray-700 mb-4">
+            Triều cường khiến một số khu vực TP Cần Thơ ngập gần một mét, nhiều
+            người không kịp trở tay, cuộc sống đảo lộn, kinh doanh ế ẩm, học
+            sinh đi thuyền tới trường...
+          </p>
+          <div class="flex items-center space-x-2">
+            <img
+              alt="Author image"
+              class="w-10 h-10 rounded-full"
+              height="40"
+              src="https://storage.googleapis.com/a1aa/image/JOCg5Ds6aJX87PlDrUu911f1QzKHM2Q85wHrPz3CFC8.jpg"
+              width="40"
+            />
+            <div class="text-sm">An Bình</div>
+          </div>
+          <div
+            class="flex justify-between items-center mt-4 text-gray-500 text-sm"
+          >
+            <div>
+              <i class="fas fa-eye"> </i>
+              12345
+            </div>
+            <div>
+              <i class="fas fa-comments"> </i>
+              123
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sidebar -->
+    <aside class="container mx-auto my-6">
+      <div class="grid grid-cols-3 gap-4">
+        <div class="col-span-2">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                alt="News image"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/nv1gtVFGuyr7P7ZTKBJhgqNvFAU3iN3CO4Hq61PE4wY.jpg"
+                width="400"
+              />
+              <div class="text-yellow-500">QUÂN SỰ</div>
+              <div class="text-sm">Oct 17, 2024</div>
+              <h3 class="text-lg font-bold mb-2">
+                MÁY BAY TÁC CHIẾN ĐIỆN TỬ MỸ ...
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Máy bay tác chiến điện tử EA-18G của hải quân Mỹ lao xuống núi ở
+                bang Washington khi bay huấn luyện, hai phi công mất tích...
+              </p>
+              <div class="flex items-center space-x-2">
+                <img
+                  alt="Author image"
+                  class="w-10 h-10 rounded-full"
+                  height="40"
+                  src="https://storage.googleapis.com/a1aa/image/JOCg5Ds6aJX87PlDrUu911f1QzKHM2Q85wHrPz3CFC8.jpg"
+                  width="40"
+                />
+                <div class="text-sm">Nguyễn Tiến</div>
+              </div>
+              <div
+                class="flex justify-between items-center mt-4 text-gray-500 text-sm"
+              >
+                <div>
+                  <i class="fas fa-eye"> </i>
+                  12345
+                </div>
+                <div>
+                  <i class="fas fa-comments"> </i>
+                  123
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                alt="News image"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/nv1gtVFGuyr7P7ZTKBJhgqNvFAU3iN3CO4Hq61PE4wY.jpg"
+                width="400"
+              />
+              <div class="text-yellow-500">QUÂN SỰ</div>
+              <div class="text-sm">Oct 18, 2024</div>
+              <h3 class="text-lg font-bold mb-2">
+                ISRAEL CÔNG BỐ VIDEO 'KHOẢNH KHẮC...
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Quân đội Israel công bố video từ drone tấn công, đặt dấu chấm
+                hết cho thủ lĩnh Hamas Yahya Sinwar trong cuộc khủng bố khi bị
+                sát hại...
+              </p>
+              <div class="flex items-center space-x-2">
+                <img
+                  alt="Author image"
+                  class="w-10 h-10 rounded-full"
+                  height="40"
+                  src="https://storage.googleapis.com/a1aa/image/JOCg5Ds6aJX87PlDrUu911f1QzKHM2Q85wHrPz3CFC8.jpg"
+                  width="40"
+                />
+                <div class="text-sm">Thầy Lâm</div>
+              </div>
+              <div
+                class="flex justify-between items-center mt-4 text-gray-500 text-sm"
+              >
+                <div>
+                  <i class="fas fa-eye"> </i>
+                  12345
+                </div>
+                <div>
+                  <i class="fas fa-comments"> </i>
+                  123
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1">
+          <div class="bg-white p-4 rounded-lg shadow mb-4">
+            <h3 class="text-lg font-bold mb-4">FOLLOW US</h3>
+            <div class="space-y-2">
+              <a class="flex items-center space-x-2 text-blue-600" href="#">
+                <i class="fab fa-facebook-f"> </i>
+                <span> 12,345 Fans </span>
+              </a>
+              <a class="flex items-center space-x-2 text-blue-400" href="#">
+                <i class="fab fa-twitter"> </i>
+                <span> 12,345 Followers </span>
+              </a>
+              <a class="flex items-center space-x-2 text-blue-700" href="#">
+                <i class="fab fa-linkedin-in"> </i>
+                <span> 12,345 Connects </span>
+              </a>
+              <a class="flex items-center space-x-2 text-pink-600" href="#">
+                <i class="fab fa-instagram"> </i>
+                <span> 12,345 Followers </span>
+              </a>
+              <a class="flex items-center space-x-2 text-red-600" href="#">
+                <i class="fab fa-youtube"> </i>
+                <span> 12,345 Subscribers </span>
+              </a>
+              <a class="flex items-center space-x-2 text-green-600" href="#">
+                <i class="fab fa-whatsapp"> </i>
+                <span> 12,345 Followers </span>
+              </a>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow mb-4">
+            <h3 class="text-lg font-bold mb-4">ADVERTISEMENT</h3>
+            <img
+              alt="Advertisement image"
+              class="w-full h-full object-cover"
+              height="250"
+              src="https://storage.googleapis.com/a1aa/image/sLP15wjINus4ze5XzLxgbgKGjo2xQHBXi7hbpeTR8hA.jpg"
+              width="300"
+            />
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow mb-4">
+            <h3 class="text-lg font-bold mb-4">TRENDING NEWS</h3>
+            <div class="space-y-4">
+              <div class="flex items-center space-x-4">
+                <img
+                  alt="Trending news image"
+                  class="w-20 h-20 object-cover rounded-lg"
+                  height="80"
+                  src="https://storage.googleapis.com/a1aa/image/X2agKZKsz2NuLT27xO5c02SrBI7xeuPKGQZGo_8NZow.jpg"
+                  width="80"
+                />
+                <div>
+                  <div class="text-yellow-500">THẾ GIỚI</div>
+                  <div class="text-sm">Oct 18, 2024</div>
+                  <h4 class="text-md font-bold">
+                    BÀ HARRIS MẤT DẦN ƯU THẾ THĂM D...
+                  </h4>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>
